@@ -1,0 +1,13 @@
+spring:
+  main:
+    allow-circular-references: true
+  jpa:
+    generate-ddl: true
+    open-in-view: false
+  datasource:
+    url: jdbc:postgresql://localhost:6432/news_db
+    username: postgres
+    password: postgres
+    hikari:
+      schema: news_schema
+      connection-timeout: 10000
